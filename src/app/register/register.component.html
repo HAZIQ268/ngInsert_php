@@ -1,0 +1,19 @@
+<form action=""  (ngSubmit)="abc()">
+  <h1 class="text-center bg-dark text-white p-2 mt-5">
+    Update Data
+  </h1>
+  <div class="mb-3">
+    <input type="text" name="name" [(ngModel)]="userdata.name" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <input type="text" name="email" [(ngModel)]="userdata.email" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <input type="text" name="password" [(ngModel)]="userdata.password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <input type="file" name="image" [(ngModel)]="userdata.image" (change)="" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <button type="submit" class="btn btn-success">Update</button>
+</form>
